@@ -8,7 +8,7 @@ defmodule Discuss.Comment do
     field :content, :string
     # field :user_id, :id
     # field :topic_id, :id
-    belongs_to :user,  Discuss.User
+    belongs_to :user,  Discuss.Accounts.User
     belongs_to :topic, Discuss.Topic
 
     timestamps()

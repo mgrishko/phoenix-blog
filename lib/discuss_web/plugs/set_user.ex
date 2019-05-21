@@ -1,7 +1,7 @@
 defmodule DiscussWeb.Plugs.SetUser do
   import Plug.Conn
 
-  alias Discuss.User
+  alias Discuss.Accounts.User
   alias Discuss.Repo
 
   def init(_default) do

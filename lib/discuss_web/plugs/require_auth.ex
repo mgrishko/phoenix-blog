@@ -3,7 +3,7 @@ defmodule DiscussWeb.Plugs.RequireAuth do
   import Phoenix.Controller
 
   alias DiscussWeb.Router.Helpers
-  # alias Discuss.User
+  # alias Discuss.Accounts.User
   # alias Discuss.Repo
 
   def init(_default) do
