@@ -1,11 +1,11 @@
-defmodule Discuss.Topic do
+defmodule Discuss.Discussions.Topic do
   use Ecto.Schema
   import Ecto.Changeset
 
   schema "topics" do
     field :title, :string
     belongs_to :user, Discuss.Accounts.User
-    has_many :comments, Discuss.Comment
+    has_many :comments, Discuss.Comment, on_delete: :nilify_all
 
     timestamps()
   end
