@@ -5,7 +5,7 @@ defmodule Discuss.Discussions.Topic do
   schema "topics" do
     field :title, :string
     belongs_to :user, Discuss.Accounts.User
-    has_many :comments, Discuss.Comment, on_delete: :nilify_all
+    has_many :comments, Discuss.Discussions.Comment, on_delete: :nilify_all
 
     timestamps()
   end

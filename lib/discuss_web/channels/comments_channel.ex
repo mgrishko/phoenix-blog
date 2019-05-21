@@ -1,7 +1,8 @@
 defmodule DiscussWeb.CommentsChannel do
   use DiscussWeb, :channel
-  alias Discuss.{Repo, Comment, User}
+  alias Discuss.{Repo, User}
   alias Discuss.Discussions.Topic
+  alias Discuss.Discussions.Comment
 
   # scaffold
   # def join("comments:lobby", payload, socket) do
